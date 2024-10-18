@@ -1,0 +1,12 @@
+Pearson correlation with similarity + -0.9
+Removed features:
+['mean', 'std', 'var', 'rms']
+
+Remaining features:
+['entropy_cA5', 'no_zero_crossings_cA5', 'n5_cA5', 'n25_cA5', 'n75_cA5', 'n95_cA5', 'median_cA5', 'skew_cA5', 'kurtosis_cA5', 'min_cA5', 'max_cA5', 'entropy_cD5', 'no_zero_crossings_cD5', 'n5_cD5', 'n25_cD5', 'n75_cD5', 'n95_cD5', 'median_cD5', 'skew_cD5', 'kurtosis_cD5', 'min_cD5', 'max_cD5', 'entropy_cD4', 'no_zero_crossings_cD4', 'n5_cD4', 'n25_cD4', 'n75_cD4', 'n95_cD4', 'median_cD4', 'skew_cD4', 'kurtosis_cD4', 'min_cD4', 'max_cD4', 'entropy_cD3', 'no_zero_crossings_cD3', 'n5_cD3', 'n25_cD3', 'n75_cD3', 'n95_cD3', 'median_cD3', 'skew_cD3', 'kurtosis_cD3', 'min_cD3', 'max_cD3', 'entropy_cD2', 'no_zero_crossings_cD2', 'n5_cD2', 'n25_cD2', 'n75_cD2', 'n95_cD2', 'median_cD2', 'skew_cD2', 'kurtosis_cD2', 'min_cD2', 'max_cD2', 'entropy_cD1', 'no_zero_crossings_cD1', 'n5_cD1', 'n25_cD1', 'n75_cD1', 'n95_cD1', 'median_cD1', 'skew_cD1', 'kurtosis_cD1', 'min_cD1', 'max_cD1']
+
+
+
+
+execution_time_before_reduction: [18.613730669021606, 31.26248574256897]
+execution_time: [18.542991876602173, 26.148231506347656]

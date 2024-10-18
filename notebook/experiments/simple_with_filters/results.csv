@@ -1,0 +1,111 @@
+,Accuracy,experiment
+SVC,0.720218878248974,experiment_none_filter
+NuSVC,0.7144596443228455,experiment_none_filter
+Logistic Regression,0.7121203830369357,experiment_none_filter
+MLP Classifier,0.7121067031463749,experiment_none_filter
+Ridge Classifier,0.7109439124487004,experiment_none_filter
+Linear SVC,0.7109302325581396,experiment_none_filter
+Linear Discriminant Analysis,0.7085088919288646,experiment_none_filter
+Gradient Boosting,0.7038987688098496,experiment_none_filter
+AdaBoost,0.7014911080711355,experiment_none_filter
+K-Neighbors,0.6888098495212038,experiment_none_filter
+Random Forest,0.6863885088919288,experiment_none_filter
+Voting,0.6806429548563612,experiment_none_filter
+XGBoost,0.6805745554035568,experiment_none_filter
+Extra Trees,0.6747606019151846,experiment_none_filter
+Bagging,0.674705882352941,experiment_none_filter
+Gaussian NB,0.6327633378932969,experiment_none_filter
+SGD Classifier,0.6270177838577291,experiment_none_filter
+Decision Tree,0.6269630642954857,experiment_none_filter
+Passive Aggressive,0.6130642954856361,experiment_none_filter
+Bernoulli NB,0.5500820793433652,experiment_none_filter
+Quadratic Discriminant Analysis,0.541860465116279,experiment_none_filter
+Perceptron,0.503406292749658,experiment_none_filter
+MLP Classifier,0.7364705882352942,experiment_simple_butter
+SVC,0.7318604651162791,experiment_simple_butter
+Ridge Classifier,0.7272229822161422,experiment_simple_butter
+Linear SVC,0.7260601915184679,experiment_simple_butter
+Logistic Regression,0.7237346101231191,experiment_simple_butter
+Linear Discriminant Analysis,0.7167305061559508,experiment_simple_butter
+NuSVC,0.707469220246238,experiment_simple_butter
+Voting,0.7062927496580028,experiment_simple_butter
+XGBoost,0.7015595075239398,experiment_simple_butter
+K-Neighbors,0.6981121751025993,experiment_simple_butter
+Extra Trees,0.6968946648426814,experiment_simple_butter
+Random Forest,0.6957865937072503,experiment_simple_butter
+Bagging,0.6899589603283174,experiment_simple_butter
+Gradient Boosting,0.6899316005471956,experiment_simple_butter
+Gaussian NB,0.686374829001368,experiment_simple_butter
+AdaBoost,0.6770451436388508,experiment_simple_butter
+Quadratic Discriminant Analysis,0.6676607387140902,experiment_simple_butter
+Decision Tree,0.6596169630642955,experiment_simple_butter
+SGD Classifier,0.6456771545827633,experiment_simple_butter
+Bernoulli NB,0.5536114911080711,experiment_simple_butter
+Passive Aggressive,0.531436388508892,experiment_simple_butter
+Perceptron,0.5173050615595076,experiment_simple_butter
+SVC,0.7306839945280438,experiment_simple_cheby1
+MLP Classifier,0.7294938440492477,experiment_simple_cheby1
+Linear SVC,0.728358413132695,experiment_simple_cheby1
+Ridge Classifier,0.7237209302325581,experiment_simple_cheby1
+Gradient Boosting,0.7213543091655267,experiment_simple_cheby1
+Logistic Regression,0.7190834473324215,experiment_simple_cheby1
+Linear Discriminant Analysis,0.7131600547195622,experiment_simple_cheby1
+NuSVC,0.7120246238030096,experiment_simple_cheby1
+Random Forest,0.7096853625170999,experiment_simple_cheby1
+XGBoost,0.6991928864569085,experiment_simple_cheby1
+Bagging,0.6957045143638851,experiment_simple_cheby1
+Voting,0.6945827633378934,experiment_simple_cheby1
+K-Neighbors,0.6910396716826266,experiment_simple_cheby1
+AdaBoost,0.6899726402188783,experiment_simple_cheby1
+Extra Trees,0.6875512995896033,experiment_simple_cheby1
+Gaussian NB,0.682859097127223,experiment_simple_cheby1
+Quadratic Discriminant Analysis,0.6745690834473324,experiment_simple_cheby1
+SGD Classifier,0.6642818057455541,experiment_simple_cheby1
+Decision Tree,0.6293570451436389,experiment_simple_cheby1
+Bernoulli NB,0.5536114911080711,experiment_simple_cheby1
+Passive Aggressive,0.5523529411764706,experiment_simple_cheby1
+Perceptron,0.5022161422708619,experiment_simple_cheby1
+SVC,0.7237209302325581,experiment_simple_cheby2
+MLP Classifier,0.7202462380300958,experiment_simple_cheby2
+Random Forest,0.715595075239398,experiment_simple_cheby2
+Logistic Regression,0.7121067031463749,experiment_simple_cheby2
+Ridge Classifier,0.708577291381669,experiment_simple_cheby2
+Linear SVC,0.7085362517099864,experiment_simple_cheby2
+Extra Trees,0.7073871409028728,experiment_simple_cheby2
+Bagging,0.7063337893296854,experiment_simple_cheby2
+Gradient Boosting,0.7039261285909713,experiment_simple_cheby2
+NuSVC,0.6980574555403557,experiment_simple_cheby2
+XGBoost,0.6970041039671683,experiment_simple_cheby2
+Linear Discriminant Analysis,0.695718194254446,experiment_simple_cheby2
+AdaBoost,0.6864158686730507,experiment_simple_cheby2
+Gaussian NB,0.6840492476060192,experiment_simple_cheby2
+K-Neighbors,0.6806292749658003,experiment_simple_cheby2
+Voting,0.669028727770178,experiment_simple_cheby2
+Quadratic Discriminant Analysis,0.661860465116279,experiment_simple_cheby2
+SGD Classifier,0.6504787961696307,experiment_simple_cheby2
+Decision Tree,0.6422024623803011,experiment_simple_cheby2
+Passive Aggressive,0.5782079343365254,experiment_simple_cheby2
+Perceptron,0.5725034199726403,experiment_simple_cheby2
+Bernoulli NB,0.5547742818057455,experiment_simple_cheby2
+SVC,0.7330232558139536,experiment_simple_elliptic
+MLP Classifier,0.7318467852257182,experiment_simple_elliptic
+Ridge Classifier,0.7295485636114911,experiment_simple_elliptic
+Linear SVC,0.7295348837209303,experiment_simple_elliptic
+Logistic Regression,0.7248974008207935,experiment_simple_elliptic
+Random Forest,0.7097127222982216,experiment_simple_elliptic
+NuSVC,0.7086046511627908,experiment_simple_elliptic
+Linear Discriminant Analysis,0.7085088919288646,experiment_simple_elliptic
+SGD Classifier,0.7084952120383037,experiment_simple_elliptic
+K-Neighbors,0.7061969904240767,experiment_simple_elliptic
+Bagging,0.6945280437756498,experiment_simple_elliptic
+Extra Trees,0.6933378932968537,experiment_simple_elliptic
+Gradient Boosting,0.6922161422708618,experiment_simple_elliptic
+XGBoost,0.6887824897400823,experiment_simple_elliptic
+Voting,0.6853077975376198,experiment_simple_elliptic
+Gaussian NB,0.6840355677154583,experiment_simple_elliptic
+AdaBoost,0.6829548563611492,experiment_simple_elliptic
+Quadratic Discriminant Analysis,0.666484268125855,experiment_simple_elliptic
+Decision Tree,0.6608071135430917,experiment_simple_elliptic
+Passive Aggressive,0.5713816689466484,experiment_simple_elliptic
+Bernoulli NB,0.5524487004103966,experiment_simple_elliptic
+Perceptron,0.4896853625170999,experiment_simple_elliptic

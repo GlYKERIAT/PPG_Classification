@@ -1,0 +1,37 @@
+# config.yaml
+experiments:
+
+  - name: experiment_nonefilter_for_feature_reduction
+    select: 'last' #selection for duplicates timeseries
+    filter:        #filter for ppg signal: None, butter, cheby1, cheby2, elliptic
+      type: 'None'
+      sampling_rate: 50
+      cutoff: 5
+    # features:
+    #   method: 'simple'    
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5
+
+  # - name: experiment_wavelet_none
+  #   select: 'last' #selection for duplicates timeseries
+  #   filter:
+  #     type: 'None'
+  #     sampling_rate: 50
+  #     cutoff: 5
+  #   features:
+  #     method: 'wavelet'
+  #     type: 'haar'
+  #     level: 5
+
+  - name: experiment_wavelet_butter
+    select: 'last' #selection for duplicates timeseries
+    filter:
+      type: 'butter'
+      sampling_rate: 50
+      cutoff: 5
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5

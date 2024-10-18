@@ -1,0 +1,51 @@
+# config.yaml
+experiments:
+  - name: experiment_wavelet_none
+    filter:
+      type: 'None'
+      sampling_rate: 50
+      cutoff: 5
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5
+
+  - name: experiment_wavelet_butter
+    filter:
+      type: 'butter'
+      sampling_rate: 50
+      cutoff: 5
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5
+
+  - name: experiment_wavelet_cheby1
+    filter:
+      type: 'cheby1'
+      sampling_rate: 50
+      cutoff: 5
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5
+  
+  - name: experiment_wavelet_cheby2
+    filter:
+      type: 'cheby2'
+      sampling_rate: 50
+      cutoff: 5
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5
+
+  - name: experiment_wavelet_elliptic
+    filter:
+      type: 'elliptic'
+      sampling_rate: 50
+      cutoff: 5
+    features:
+      method: 'wavelet'
+      type: 'haar'
+      level: 5
