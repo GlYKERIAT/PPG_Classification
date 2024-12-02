@@ -1,14 +1,10 @@
-# %% [markdown]
-# Read and filtered Data
+#read and select duplicates
 
-# %%
 import numpy as np
 import pandas as pd 
 from sklearn import metrics
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-
-# %%
 
 
 def read_data(path= '../data/ppg.csv', selection = 'last' ):
@@ -30,7 +26,6 @@ def read_data(path= '../data/ppg.csv', selection = 'last' ):
     return new_df
 
 
-# %%
 def select_duplicates(df, select= None):
     print("Amount of duplicate values: \n",df.duplicated(subset=['DATE', 'PATIENT_CODE'], keep=False).value_counts())
     if select=='last':

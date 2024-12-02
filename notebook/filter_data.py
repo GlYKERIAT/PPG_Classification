@@ -1,13 +1,17 @@
-# %% [markdown]
-# Read and filtered Data
 
-# %%
+# filtered Data
+
 import numpy as np
 import pandas as pd 
 from sklearn import metrics
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from scipy import signal
+import scipy.special
+from scipy.signal import find_peaks, welch
+from collections import Counter
+from pywt import wavedec
+
 
 def apply_lowpass_filter(ppg_signal, filter_params):
 
@@ -34,10 +38,6 @@ def apply_lowpass_filter(ppg_signal, filter_params):
     ppg_filtered = signal.filtfilt(b, a, ppg_signal)
     return ppg_filtered
 
-import scipy.special
-from scipy.signal import find_peaks, welch
-from collections import Counter
-from pywt import wavedec
 
 def calculate_entropy(ppg_signal):
     counter_values = Counter(ppg_signal).most_common()
@@ -131,8 +131,6 @@ def bubble_entropy(time_series, r, m):
     
     return bubble_entropy_value
 
-
-
 def calculate_crossings(ppg_signal):
     zero_crossing_indices = np.nonzero(np.diff(np.array(ppg_signal) > 0))[0]
     no_zero_crossings = len(zero_crossing_indices)
@@ -147,24 +145,30 @@ def get_features(ppg_signal, r_m):
 
     bubble_entropy_list = []
     #print("edww")
-    for i in range(2,5,1):
-        #print("i", i)
-        for j in np.arange(0.1,0.26,0.05):
+    # for i in range(2,5,1):
+    #     #print("i", i)
+    #     for j in np.arange(0.1,0.26,0.05):
             
-            #print("j",j)
-            bubble_entropy_list.append(bubble_entropy(ppg_signal, m= i, r= j))
+    #         #print("j",j)
+    #         bubble_entropy_list.append(bubble_entropy(ppg_signal, m= i, r= j))
                            
     # r = r_m["r"]
-    # m = r_m["m"]
+    m = r_m["m"]
+    # bubble_value = bubble_entropy(ppg_signal, m=m , r=r)
+    # features = [entropy] + crossings + statistics + [bubble_value] 
     #print("r", r)
     #print("m", m)
-    #bubble_value = bubble_entropy(ppg_signal, m=m , r=r)
-    #features = [entropy] + crossings + statistics + bubble_entropy_list
-    #features = [entropy] + crossings + statistics + [bubble_value] 
+    for j in range(0.1,0.26,0.05):
+        bubble_entropy_list.append(bubble_entropy(ppg_signal, m=r_m[m], r=j))
+
+    
+    features = [entropy] + crossings + statistics + bubble_entropy_list
+    
+
     #features = [entropy] + crossings + statistics
     #print(len(features))
-    return bubble_entropy_list
-    #return features
+    #return bubble_entropy_list
+    return features
 
 
 
@@ -203,4 +207,4 @@ def extract_features( ppg_signal, features_params, filter_params, bubble_params)
     print(len(features))
     return features, coeff_names
 
-import numpy as np
+
