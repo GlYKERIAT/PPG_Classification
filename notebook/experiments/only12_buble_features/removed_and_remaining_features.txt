@@ -1,1 +1,0 @@
-execution_time_before_reduction: [16.81720542907715]

@@ -159,8 +159,9 @@ def get_features(ppg_signal, r_m):
     #print("r", r)
     #print("m", m)
     for j in np.arange(0.1,0.26,0.05):
-        bubble_entropy_list.append(bubble_entropy(ppg_signal, m=r_m[m], r=j))
-    print(f'the len of bubble entropy list is {len(bubble_entropy_list)}')
+        value = bubble_entropy(ppg_signal, m=m, r=j)
+        bubble_entropy_list.append(value)
+    #print(f'the len of bubble entropy list is {len(bubble_entropy_list)}')
     
     features = [entropy] + crossings + statistics + bubble_entropy_list
 
@@ -207,7 +208,7 @@ def extract_features( ppg_signal, features_params, filter_params, bubble_params)
             features += get_features(cDs[i], r_m)
     #features = get_features(ppg_signal)
     #features = features_6 
-    print(len(features))
+    #print(len(features))
     return features, coeff_names
 
 
