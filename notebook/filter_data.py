@@ -158,12 +158,11 @@ def get_features(ppg_signal, r_m):
     # features = [entropy] + crossings + statistics + [bubble_value] 
     #print("r", r)
     #print("m", m)
-    for j in range(0.1,0.26,0.05):
+    for j in np.arange(0.1,0.26,0.05):
         bubble_entropy_list.append(bubble_entropy(ppg_signal, m=r_m[m], r=j))
-
+    print(f'the len of bubble entropy list is {len(bubble_entropy_list)}')
     
     features = [entropy] + crossings + statistics + bubble_entropy_list
-    
 
     #features = [entropy] + crossings + statistics
     #print(len(features))
@@ -195,9 +194,13 @@ def extract_features( ppg_signal, features_params, filter_params, bubble_params)
         # Get the coefficient names based on the level
         coeff_names = [f'cD{i}' for i in range(level, 0, -1)]
         coeff_names.insert(0, f'cA{level}')  # Add the approximation coefficient at the highest level
+        coeff_names.extend(['mr0.1','mr0.15','mr0.2', 'mr0.25'])
+
         
+        ###coeff plus bublles entropy
         # Extracting features from the approximation coefficient
         features = get_features(cA, r_m)
+
 
         # Loop through the detailed coefficients dynamically based on the wavelet level
         for i in range(len(cDs)):
